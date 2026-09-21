@@ -1,0 +1,13 @@
+# Render Blueprint: 대시보드에서 New → Blueprint → memo-backend 저장소를 고르면 이 설정대로 서비스가 만들어진다.
+services:
+  - type: web
+    name: memo-backend
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ALLOWED_ORIGINS
+        value: http://localhost:5173   # 배포 후 Vercel 주소로 바꾼다 (*.vercel.app 은 코드에서 이미 허용)
+      - key: PYTHON_VERSION
+        value: 3.12.7
