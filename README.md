@@ -5,8 +5,8 @@
 
 ## 배포 주소
 
-- API: https://<서비스>.onrender.com  ← 배포 후 채운다
-- Swagger UI: https://<서비스>.onrender.com/docs
+- API: https://memo-backend-0kin.onrender.com
+- Swagger UI: https://memo-backend-0kin.onrender.com/docs
 
 ## 구성
 
