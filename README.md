@@ -1,7 +1,7 @@
 # memo-backend
 
 메모 CRUD API. FastAPI + SQLAlchemy(SQLite)로 만들고 Render에 배포한다.
-프론트엔드 저장소: https://github.com/pgunil07-lang/memo-frontend
+프론트엔드 저장소: https://github.com/pgunil07-lang/memo-frontend · 배포: https://memo-frontend-phi.vercel.app
 
 ## 배포 주소
 
@@ -39,6 +39,6 @@ fastapi dev main.py             # http://127.0.0.1:8000/docs
 
 - Build Command: `pip install -r requirements.txt`
 - Start Command: `uvicorn main:app --host 0.0.0.0 --port $PORT`
-- 환경변수: `ALLOWED_ORIGINS` = Vercel 배포 주소 (예: `https://memo-frontend-xxxx.vercel.app`)
+- 환경변수: `ALLOWED_ORIGINS` = Vercel 배포 주소 (`https://memo-frontend-phi.vercel.app`). `*.vercel.app`은 코드에서 정규식으로도 허용한다.
 
 무료 플랜은 파일시스템이 임시라서 재배포·슬립 시 SQLite 데이터가 초기화된다.
